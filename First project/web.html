@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css" class="web css">
+</head>
+
+<style>
+  *{
+        font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+
+    }
+    /* css Reset*/
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('image.jpg.jpg');
+       background-size: 100%  ;
+        background-repeat: no-repeat;
+    }
+    .left{
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 25px;
+        top: 15px;       
+    }
+    .left img{
+        
+        width: 120px;
+        height: 60px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 5px auto;
+        /*border: 2px solid blue;    */   
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        color: white;
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px ;       
+    }
+    .navbar li :hover, .navbar li a:active{
+        text-decoration: underline;
+        color: gray;        
+    }
+    .right{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        display: inline-block;
+        /*border: 2px solid green;*/
+    }
+    .btn{
+        text-align: center;
+    margin: 13px 2px;
+    background-color: black;
+    color: white;
+    padding: 7px 12px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+    
+    .btn:hover{
+        background-color: rgb(8, 8, 8);
+    }
+    .container{
+       
+        border: 2px solid white;
+    margin: 120px 51px;
+    padding: 50px 50px;
+    width: 30%;
+    border-radius: 40px;
+    display: block;
+}
+
+.formgroup  input{
+   
+    text-align: center;
+    display: block;
+    width: 249px;
+    padding: 10px;
+    border: 2px solid white;
+    margin: 14px 90px;
+    font-size: 16px;
+    border-radius: 13px;
+}
+
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width: 60%;
+    margin: auto;
+    height: 40px;
+
+}
+.bottom{
+    color: red;
+}
+</style> 
+<body>
+<header class="header">
+    <!-- left boc for logo-->
+    <div class="left">
+        <img src="doumble.png" alt="">
+        <div>Gym Fitness</div>
+    </div>
+    <!-- mid box for navbar-->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calander</a></li>
+            <li><a href="#">Contact Us</a></li>            
+        </ul>
+    </div>
+    <!--right for button-->
+    <div class="right">
+        <button class="btn">Call Us now</button>
+        <button class="btn">Email Us</button>
+    </div>
+</header>
+<div class="container">
+  <h1>Join the best Gym in Delhi</h1>
+  <form action="noaction.php"> 
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your name">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your age">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Enter your locality">
+    </div>
+    <div class="formgroup">
+        <input type="text" name="" placeholder="Phone no.">
+    </div>
+    <button class="btn">Submit</button>
+  </form>
+
+</div>
+<div class="bottom">Rajan</div>
+</body>
+</html>
