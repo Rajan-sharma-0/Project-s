@@ -1,0 +1,57 @@
+body{ 
+    background-color: antiquewhite;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    font-family: inherit;
+}
+nav ul { 
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 3.3rem;
+    background-color: black;
+    color: white;
+
+}
+nav ul li{
+    padding: 0.5rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.logo img {
+    height: 3rem;
+    padding: 0 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+.container{
+    min-height: 75vh;
+}
+.image{
+    display: flex;
+    width: 20px;
+}
+.bottom{
+    position: static;
+    height: 100px;
+    background-color: black;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  white;
+
+}
+#myprogresbar{
+    width:80vw;
+ 
+}
