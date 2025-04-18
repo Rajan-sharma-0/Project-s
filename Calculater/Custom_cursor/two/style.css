@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100%; 
+    height: 100vh;  
+    background-color: black;
+    color: white;
+    position: relative;
+    
+}
+
+.cont{
+    height: 120px 
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.cont h1{
+    font-size: 100px;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+
+}
+.cont img{
+    width: 110px;
+    height: 110px;
+    onject-fit: cover;
+    onject-position: center;
+    position: absolute;
+    border-radius: 50%;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    transition: all linear 0.3s;
+    
+}
