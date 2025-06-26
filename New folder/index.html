@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-red-400">
+    
+ <nav class="navbar navbar-dark bg-dark shadow-sm ">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <svg class="me-2" width="32" height="32" fill="none" viewBox="0 0 32 32">
+          <path d="M4 24V8l8 8-8 8zm12-8l8-8v16l-8-8z" fill="#0d6efd" />
+        </svg>
+        <span class="fw-bold fs-3 text-primary">LIFELINKR</span>
+      </a>
+
+      <!-- Desktop Nav (visible on lg and up) -->
+      <ul class="navbar-nav flex-row gap-3 d-none d-lg-flex ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="#">Why Choose Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="#">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white fs-5" href="#">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light rounded-pill px-4 py-2" href="#">Schedule Demo</a>
+        </li>
+      </ul>
+
+      <!-- Toggler (only on small/medium screens) -->
+      <button class="navbar-toggler d-lg-none border rounded-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Menu (for mobile) -->
+      <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">Why Choose Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light rounded-pill px-4 py-2" href="#">Schedule Demo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+   <!-- About section -->
+
+
+
+    <div class="max-w-7xl mx-auto py-12 px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left: Features -->
+            <div class="flex-1">
+                <h1 class="text-3xl md:text-4xl font-bold text-blue-700 mb-4 leading-tight">
+                    MANAGE PATIENT DATA<br>
+                    WITH IVF SOFTWARE
+                </h1>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Boost Your Clinic's Efficiency, Enhance Patient Care<br>
+                    and Streamline Clinic Operations
+                </p>
+                <div class="grid grid-cols-2 gap-x-8 gap-y-6 mb-8">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- CRM Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2" stroke="#38bdf8" stroke-width="2"/><path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">In-Built CRM</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Insight Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#38bdf8" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Patient Insight</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Custom Fit Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#38bdf8" stroke-width="2"/><path d="M8 12h8" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Custom Fit</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Easy Connect Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M8 12h8M12 8v8" stroke="#38bdf8" stroke-width="2"/><circle cx="12" cy="12" r="10" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Easy Connect</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Info Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 20c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z" stroke="#38bdf8" stroke-width="2"/><path d="M12 8v4l3 3" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Info on-the-go</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Data Transfer Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M16 17l-4 4-4-4M12 21V3" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Data Transfer</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Analytics Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#38bdf8" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Real-Time Analytics</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="text-blue-400">
+                            <!-- Personalized Icon -->
+                            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z" stroke="#38bdf8" stroke-width="2"/><path d="M6 20v-2c0-2.21 3.58-4 8-4s8 1.79 8 4v2" stroke="#38bdf8" stroke-width="2"/></svg>
+                        </span>
+                        <span class="text-gray-700 font-medium">Personalized for You</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Form -->
+            <div class="flex-1 max-w-xl w-full">
+                <div class="bg-blue-900 rounded-2xl shadow-lg p-8">
+                    <h2 class="text-white text-3xl font-semibold mb-6 text-center">Schedule a Free Demo</h2>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Full Name*" class="rounded-lg px-4 py-2 w-full border border-white bg-blue-900 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                            <input type="email" placeholder="Email Address*" class="rounded-lg px-4 py-2 w-full border border-white bg-blue-900 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                            <input type="text" placeholder="Phone Number*" class="rounded-lg px-4 py-2 w-full border border-white bg-blue-900 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                            <input type="text" placeholder="WhatsApp Number" class="rounded-lg px-4 py-2 w-full border border-white bg-blue-900 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                            <input type="text" placeholder="Clinic Name*" class="rounded-lg px-4 py-2 w-full border border-white bg-blue-900 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                            <input type="text" placeholder="Country*" class="rounded-lg px-4 py-2 w-full border border-white bg-blue-900 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                        </div>
+                        <div class="flex justify-center pt-4">
+                            <button type="submit" class="bg-white text-blue-900 font-semibold rounded-full px-12 py-3 shadow transition hover:bg-blue-100">
+                                Next
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Trusted Clinics -->
+        <div class="mt-12 text-center">
+            <span class="text-gray-600 font-semibold">Trusted by Many IVF Clinics :</span>
+            <div class="flex flex-wrap justify-center items-center gap-8 mt-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bloom_IVF_logo.png" alt="Bloom IVF" class="h-10 object-contain" />
+                <img src="https://fertiliaivf.com/wp-content/uploads/2022/09/fertilia-logo.png" alt="Fertilia IVF" class="h-10 object-contain" />
+                <img src="https://fertilitynova.com/wp-content/uploads/2022/11/Fertility-Nova-Logo.png" alt="Fertility Nova" class="h-10 object-contain" />
+                <img src="https://neelkanthivfcentre.com/wp-content/uploads/2022/07/neelkanth-logo.png" alt="Neelkanth Fertility" class="h-10 object-contain" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
