@@ -43,3 +43,46 @@ function toggleFaq(idx) {
       });
     }
   });
+
+
+
+
+   function runClinicCarousel() {
+    const images = [
+      "https://www.lifelinkr.com/wp-content/uploads/2025/01/neelkanth-fertility-using-ivf-software.jpg",
+      "https://www.lifelinkr.com/wp-content/uploads/2025/01/life-center-using-ivf-software.jpg",
+      "https://www.lifelinkr.com/wp-content/uploads/2025/01/horizon-using-ivf-software.jpg",
+      "https://www.lifelinkr.com/wp-content/uploads/2025/01/fertility-nova-using-ivf-clinic-management-software.jpg"
+    ];
+    const alts = [
+      "Apex IVF Care",
+      "Bloom IVF",
+      "Fertilia IVF",
+      "Fertility Nova"
+    ];
+    let idx = 0;
+    let intervalId = null;
+    function start() {
+      const img = document.getElementById('carousel-image');
+      if (!img) return;
+      intervalId = setInterval(() => {
+        idx = (idx + 1) % images.length;
+        img.src = images[idx];
+        // img.alt = alts[idx];
+      }, 2000);
+    }
+    function stop() {
+      if (intervalId) clearInterval(intervalId);
+    }
+    // Only run on mobile/tablet
+    function checkAndRun() {
+      if (window.innerWidth < 768) {
+        start();
+      } else {
+        stop();
+      }
+    }
+    checkAndRun();
+    window.addEventListener('resize', checkAndRun);
+  }
+  document.addEventListener('DOMContentLoaded', runClinicCarousel);
